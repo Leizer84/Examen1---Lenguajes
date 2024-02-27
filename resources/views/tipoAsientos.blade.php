@@ -15,14 +15,19 @@
     <br>
     <table class="table">
         <thead>
+
+            @foreach ($asientos as $asiento)
+                
             <tr>
-                <th>Id Tipo Asiento</th>
-                <th>Descripci&oacute;n</th>
-                <th>Precio</th>
-                <th>Estado</th>
+                <th>{{$asiento->idTipoAsiento}}</th>
+                <th>{{$asiento->descripcion}}</th>
+                <th>{{$asiento->precio}}</th>
+                <th>{{$asiento->estado}}</th>
                 <th>Editar</th>
                 <th>Eliminar</th>
             </tr>
+
+            @endforeach
         </thead>
         <tbody>
             

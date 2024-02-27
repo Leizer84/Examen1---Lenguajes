@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Controllers\TipoAsientoController;
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\VuelosController;
+use App\Http\Controllers\VuelosAsientosController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +15,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [VuelosController::class, 'index'])->name('inicio');
+Route::get('/tipo_asientos', [TipoAsientoController::class , 'asientos'])->name('tiposAsientos');

@@ -11,7 +11,7 @@
     <div class="container">
         <h1> Men&uacute; principal Aerolinea </h1>
         <br>
-        <a class="btn btn-primary"> Tipos de Asiento   </a>
+        <a href={{ route('tiposAsientos') }} class="btn btn-primary"> Tipos de Asiento   </a>
         <a class="btn btn-primary"> Vuelos </a>
     </div>
     
